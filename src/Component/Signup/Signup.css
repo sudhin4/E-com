@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.Whole_signup_content{
+    width: 500px;
+    border: 1px solid rgba(210, 205, 205, 0.776);
+    padding: 20px;
+    background-color: #ecf4ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 11;
+    backdrop-filter: blur(5px)
+}
+.Signup_heading{
+    font-family: 'Inter';
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+
+}
+.signup_para{
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.655);
+    display: flex;
+    justify-content: center;
+}
+.whole_heading_content{
+    line-height: 10px;
+}
+.labelInput{
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(78, 77, 77);
+    position: relative;
+    
+}
+.input_email{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    width:300px;
+    height: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.368);
+    outline: none;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+.Inputs{
+    line-height: 30px;
+    position: relative;
+    left: 15%;
+    
+}
+.input_icon{
+    font-size: 23px;
+    color: rgba(52, 50, 50, 0.765);
+    position: relative;
+    right: 30px;
+    top: 5px;
+}
+.Signup{
+    width: 332px;
+    height: 45px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    transition: transform 0.2s;
+    position: relative;
+    left: 15%;
+
+}
+.Signup:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    background-color: rgb(47, 46, 46);
+}
+.orwith{
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(132, 132, 132, 0.715);
+    display: flex;
+    justify-content: center;
+}
+.google_account{
+    width: 330px;
+    height: 40px;
+    color: rgba(0, 0, 0, 0.728);
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    left: 15%;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+.google_account:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.google_icon{
+    font-size: 19px;
+    padding-right: 50px;
+    position: relative;
+    top: 3px;
+}
+.close_mark{
+    font-size: 29px;
+    transition: transform 0.2s;   
+}
+.close_mark:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+    background-color: rgba(119, 119, 119, 0.169);
+    border-radius: 100%;
+}
+.close_mark_div{
+    display: flex;
+    justify-content: end;
+}
+.already_have_acc{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.aha{
+    font-family: "Inter";
+    font-size: 13px;
+    font-weight: 400;
+}
+.signup_btn{
+    font-family: "Inter";
+    font-size: 13px;
+    font-weight: 500;
+    color: blue;
+}
+.signup_btn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

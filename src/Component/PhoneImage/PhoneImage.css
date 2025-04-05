@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.Mobile_size_imagee {
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgba(2, 2, 2, 0.315);
+    border-radius: 10px;
+
+}
+
+.MobilesizeproductParaaa {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    position: relative;
+    color: rgba(0, 0, 0, 0.726);
+    left: 14px;
+    width: 50px;
+    bottom: 10px;
+}

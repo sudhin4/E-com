@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.whole_card_content {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    border: 1px solid rgba(128, 126, 126, 0.637);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+     background-color: #ecf4ff97; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .whole_card_content:hover{
+    transform: scale(1.03);
+  }
+
+  
+  
+  .product_image {
+    width: 130px;
+    height: 130px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    mix-blend-mode: multiply;
+    background-color:#e9edf4c8; ;
+  }
+  .ProductName {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    margin: 10px 0 5px 0;
+    width: 230px;
+  }
+  
+  .Price {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .Buybtn {
+    width: 100px;
+    height: 35px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .Buybtn:hover {
+    background-color: #444;
+    transform: scale(1.05);
+  }
+  
+  .Cart_btn {
+    position: relative;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .Cart_btn:hover {
+    color: black;
+    transform: scale(1.1);
+  }
+  .Buy_like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  @media only screen and (max-width: 453px){
+    .whole_card_content{
+      width: 140px;
+      height: 270px;
+      background-color: white;
+      
+    }
+    .ProductName{
+      font-size: 12px;
+      width: 135px;
+    }
+    .Price{
+      font-size: 14px;
+      position: relative;
+      left: -10px;
+    }
+    .Buybtn{
+      font-weight: 300;
+    }
+    .Cart_btn{
+      font-size: 22px;
+    }
+  }
+  
+             

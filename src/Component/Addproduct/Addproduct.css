@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.Adproductheading{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 30px;
+}
+.Heading_seller{
+    line-height: 10px;
+    padding: 10px;
+    padding-left: 30px;
+}
+.subheading{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.507);
+}
+.Input_getting_fields{
+    position: relative;
+    top: 30px;
+}
+.Image_label{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.559);
+    padding: 10px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    position: relative;
+    top: 40%;
+    left: 30%;
+    background-color: #ecf4ff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.Image_label:hover{
+    color: black;
+}
+
+.Input_img_div{
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.283);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+.Whole_input_section{
+    background-color: #e6f0ff72;
+    line-height: 25px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.132);
+    border-radius: 15px;
+    width: 700px;
+    padding: 30px;
+    padding-bottom: 60px;
+    margin-left: 30px;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.235);
+
+}
+.label{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.546);
+    
+}
+.input{
+    width: 300px;
+    height: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+.drop_file{
+   font-family: 'Inter';
+   font-weight: 600;
+   font-size: 16px;
+   color: rgba(0, 0, 0, 0.47);
+   position: relative;
+   top: 80px;
+   left: 36%; 
+}
+
+.Whole_input_section{
+    line-height: 40px;
+}
+.name_label{
+    position: relative;
+    top: 10px;
+}
+.category_label{
+    position: relative;
+    top: 10px;
+}
+.description_label{
+    position: relative;
+    top: 10px;
+}
+.price_label{
+    position: relative;
+    top: 10px;
+}
+
+
+.btn_seller{
+    width: 120px;
+    height: 40px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    bottom: 50px;
+    left: 40%;
+    border: 1px solid rgba(0, 0, 0, 0.356);
+    outline: none;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+.btn_seller:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+    
+}
+#publish_btn{
+    color: white;
+    background-color: black;
+}
+.select__{
+    width: 300px;
+    height: 45px;
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 16px;
+    padding-left: 16px;
+    outline: none;
+    border-radius: 5px;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.452);
+}
+.optionss{
+    background-color: #ecf4ff;
+    
+}
+.price_section_box{
+    width: 100px;
+    
+}
+.percentage_label{
+    font-size: 17px;
+}
+#discount_percentage{
+    width: 40px;
+}
+.Price_section{
+    display: flex;
+    gap: 40px;
+}
+.radio_content{
+    display: flex;
+    gap: 5px;
+}
+.textforradiocheckbox{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.651);
+}
+.radio_checkbox{
+    line-height: 1px;
+    position: relative;
+    top: 10px;
+}
+.checkbox_inp{
+    cursor: pointer;
+}
+.Errormessageclose{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    color: red;
+    position: relative;
+    left: 10px;
+    
+}
+
+.Afterimagesection{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+.save_btn{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 70px;
+    
+    transition: transform 0.2ms;
+}
+.save_btn:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.cancelbtn{
+    color: black;
+    background-color: white;
+    padding: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.502);
+    border-radius: 5px;
+    outline: none;
+    width: 70px;
+    transition: transform 0.2ms;
+}
+.cancelbtn:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.buttons_cancel_save{
+    display: flex;
+    gap: 10px;
+}
+.afterimagerender{
+    border: 1px solid black;
+    width: 200px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.publishModalfull{
+    position: fixed;
+    z-index: 10;
+    left: 35%;
+    top: 80%;
+    opacity: rgba(0, 0, 0, 0.5);
+}
+.discription{
+    padding: 10px;
+    width: 400px;
+    height: 80px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.452);
+}
+.ModalImpact_div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.477);
+    z-index: 10;
+}
+.publishModalfull{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    z-index: 100;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:453px){
+    .Whoel_content{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .Adproductheading{
+        font-weight: 600;
+        font-size: 20px;
+        justify-content: center;
+    }
+    .subheading{
+        display: none;
+    }
+    .Heading_seller{
+        justify-content: center;
+        display: flex;
+    }
+    .Input_img_div{
+        width: 200px;
+        height:200px;
+        font-size: 14px;
+    }
+    .Image_label{
+        width: 100px;
+        height: 50px;
+        font-size: 14px;
+        left: 43px;
+    }
+    
+    .Whole_input_section{
+    margin-left: 5px;
+    padding: 20px;
+    width: 85%;
+    }
+    .drop_file{
+        font-size: 14px;
+        top: 30%;
+    }
+    .label{
+        font-size: 14px;
+    }
+    .name_input{
+        width: 80%;
+    }
+    .Price_section{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .select__{
+        width: 87%;
+    }
+    .SellingPrice_mobile_gird{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .discription{
+        width: 92%;
+    }
+    .buttons{
+        gap: 10px;
+        position: relative;
+        top: 70px;
+        right: 130px;
+    }
+    .publishModalfull {
+        width: 90%; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+    }
+}

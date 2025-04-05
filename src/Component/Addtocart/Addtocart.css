@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.productname_cart{
+    font-family: "Inter";
+    font-weight: 400;
+    width: 240px;
+    font-size: 12px;
+    line-height: normal;
+    color: rgba(0, 0, 0, 0.824);
+}
+.pricediv{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.756);
+}
+.items_cart{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.879);
+}
+.contentsection_cart{
+    line-height: 3px;
+    position: relative;
+    bottom: 10px;
+}
+.wholecart_setion{
+    display: flex;
+    gap: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.249);
+    width: 350px;  
+    padding: 10px;
+    height: 90px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 6px;
+}
+.productimage_cart{
+    width: 90px;
+    height: 90px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.187);
+    border-radius: 5px;
+    width: fit-content;
+}
+.closeMark_Cart_sec{
+    font-size: 25px;
+}
+.close_btn_cart{
+    outline: none;
+    border: none;
+    background-color: white;
+    background-color: none;
+    position: relative;
+    left: 260px;
+    cursor: pointer;
+    
+    
+}
+.close_btn_cart:hover{
+    color: rgba(0, 0, 0, 0.6);
+
+}
+.heading_cartsec{
+    display: flex; 
+   
+    
+}
+.heading{
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 24px;
+}
+.trashicon_cart{
+    position: absolute ;
+    right: 20px;
+    top:68px;
+
+}
+.trashicon_cart:hover{
+    color: rgba(0, 0, 0, 0.573);
+    cursor: pointer;
+}
+
+.Wholecartprice_div{
+    width: 350px;
+    line-height: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 6px;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+}
+
+.Price_details{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.Label{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 14px;
+}
+.price_tag{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+}
+.Grandtotal_tag{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 14px;
+}
+.Total_price{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 14px; 
+}
+.item_totalll_price{
+    position: relative;
+    left: 170px;
+}
+.Delivery_charge_price{
+    position: relative;
+    left: 130px;
+}
+.Total_price{
+    position: relative;
+    left: 169px;
+}
+.Grand_total{
+    border-top: 1px solid rgba(0, 0, 0, 0.126);
+}
+.Proceed_to_buy_btn{
+    width: 370px;
+    height: 60px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    background-color: green;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 6px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    margin-top: 20px;
+    
+}
+.Proceed_to_buy_btn:hover{
+    transform: scale(1.02);
+}
+.UNnder_term{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+}
+.Noitems{
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: 16px;
+    position: relative;
+    top: 100px;
+    left: 110px;
+    color: rgba(0, 0, 0, 0.863);
+    
+}
+.CartemptyImage{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 120px;
+    top: 120px;
+}
+
+@media only screen and (max-width:453px){
+    .BillDetails{
+        font-size: 21px;
+    }
+    .Price_details{
+        gap: 10px;
+    }
+    .Wholecartprice_div{
+        position: relative;
+        left: 15px;
+        width: 85%;
+    }
+    .item_totalll_price{
+        position: relative;
+        left: 120px;
+    }
+    .Delivery_charge_price{
+        position: relative;
+        left: 80px;
+    }
+    .Total_price{
+        position: relative;
+        left: 116px;
+    }
+    
+}

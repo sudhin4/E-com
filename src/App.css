@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html,body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    
+    
+}
+
+.Products_heading{
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Products_item{
+    display: flex;
+    flex-wrap: hidden;
+    gap: 40px;
+    justify-content: center;
+    margin: 4rem;
+    color: black;
+    
+}
+.whole_product_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap:25px;
+
+}
+.signup_sec{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    z-index: 11;
+}
+
+a{
+    color: black;
+}
+
+.whole_product_item_card{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+.addtocart_component{
+    position: absolute;
+    z-index: 11;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    padding: 20px;
+    top: 0;
+    width: 30%;
+    min-height: 100%;
+    max-height:max-content;
+    scroll-behavior: smooth;
+    right: -50%;
+    box-shadow: rgba(51, 51, 52, 0.511) 5px 10rem 100px 0px;
+    transition: right 0.7s cubic-bezier(0.25, 1, 0.3, 1);
+    
+}
+
+
+.addtocart_component.open{ 
+    right: 0;
+    
+}
+
+
+
+
+
+.whole_footer{
+    margin-top: 100px;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40px;
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.Products_item_mobileee{
+    display: none;
+}
+
+.mobileProductsection{
+    display: none;
+}
+.mobilesidebar_component{
+    display: none;
+}
+.mobilemyproductpage{
+    display: none;
+}
+.Profile_page_for_mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 453px){
+
+    body{
+        overflow-x:hidden;
+    }
+    #cartcomponent{
+        display: none;
+    }
+    .Products_heading{
+        font-size: 20px;
+        position: absolute;
+        top: 35%;
+        left: 35%;
+    }
+    .Products_item{
+        display: none;
+    }
+    .slider_container{
+        display: flex;
+    }
+    .MobileProductRender{
+        display: flex;
+        flex-direction: row;
+    }
+    .slider_container{
+        top: 35%;
+    }
+    .mobileProductsection{
+        display: block;
+        position: relative;
+        top: -150px;
+        left: 10px;
+    }
+    .whole_product_card{
+        position: relative;
+        bottom: 120px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .seller_image_content{
+        position: relative;
+        bottom: 180px;
+    }
+    .contact_sec{
+        position: relative;
+        bottom: 170px;
+    }
+    .Footer_app{
+        right: 13px;
+        position: absolute;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .whole_product_item_card{
+        flex-wrap: wrap;
+    }
+    .mobilesidebar_component{
+        display: block;
+        position: absolute;
+        z-index: 100;
+        background-color: black;
+        color: white;
+        min-height: 100%;
+        top: 1px;
+        padding: 20px;
+        left: -300px;
+        transition: left 1.9s cubic-bezier(0.25, 1, 0.3, 1);
+        position: fixed;
+        
+    }
+    .mobilesidebar_component.open{
+        left: 0px;
+    }
+    .mobilemyproductpage{
+        display: block;
+    }
+    
+    
+    
+}
+
+
+

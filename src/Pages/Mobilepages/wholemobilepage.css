@@ -1,0 +1,15 @@
+@media only screen and (max-width:453px){
+    .noitem{
+        width: 200px;
+        height: 200px;
+    }
+    .notitemserror{
+        font-size: 27px;
+    }
+    .Noitems_div_mobile{
+        position: absolute;
+        top: 25%;
+        left: 24%;
+    }
+    
+}

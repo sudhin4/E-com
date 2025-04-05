@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.sellerimg{
+    width: 300px;
+    height: 300px;
+    mix-blend-mode: multiply;
+    background-color: white;
+    
+}
+.Heading{
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 18px;
+    width: 300px;
+    position: relative;
+    top: 60px;
+    background-color: #ecf4ff;
+    border: 1px solid rgba(0, 0, 0, 0.215);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.para{
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 18px;
+    width: 300px;
+    position: relative;
+    top: 40px;
+    background-color: #ecf4ff73;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.Whole_content{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    top: 50px;
+}
+.seller{
+    position: relative;
+    top: 30px;
+    width: 120px;
+    height: 35px;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 19px;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.MovingItems{
+    position: relative;
+}
+.seller:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.Watchclipart{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 38%;
+    top: -30px;
+}
+.Watchclipart{
+    animation-name: move;
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes move {
+    0%{
+        margin-top: 0px;
+    }
+    50%{
+        margin-top: 5px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+.trainclipart{
+    width: 50px;
+    height: 50px;
+    mix-blend-mode: multiply;
+    background-color: white;
+    position: absolute;
+    top: -15rem;
+    left: 39%;
+    transform: rotate(10deg);
+}
+.trainclipart{
+    animation-name: MOVE;
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes MOVE {
+    0%{
+        margin-top: 0px;
+    }
+    50%{
+        margin-top: 10px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+
+.Headphoneclipart{
+    width: 50px;
+    height: 50px;   
+    position: absolute;
+    top: -200px;
+    left: 56%;
+    animation-name: Move;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    
+}
+@keyframes Move {
+    0%{
+        margin-top: 0px;
+    }
+    50%{
+        margin-top: 10px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width:453px){
+    .Whole_content{
+        display: flex;
+        flex-direction: column;
+    }
+    .Heading{
+        color: white;
+        background-color: black;
+        font-size: 17px;
+        font-weight: 200;
+        width: 88%;
+        
+    }
+    .para{
+        width: 88%;
+        color: white;
+        background-color: black;
+        bottom: 29px;
+        font-size: 17px;
+        font-weight: 200;
+    }
+    .sec_ctn{
+        position: relative;
+        left: 35px;
+        top: 40px;
+    }
+    .thrid_ctn{
+        position: relative;
+        bottom: 30px;
+    }
+    .MovingItems{
+        bottom: 120px;
+       
+
+    }
+    .trainclipart{
+        position: absolute;
+        left: 14%;
+    }
+    .Headphoneclipart{
+        position: absolute;
+        left: 69%;
+    }
+    .Watchclipart{
+        position: absolute;
+        left: 30%;
+    }
+}

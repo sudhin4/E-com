@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.heading{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+}
+.whole_footer{
+    line-height: 20px;
+    border: 1px solid black;
+    padding: 20px;
+    padding-bottom: 30px;
+    color: white;
+    background-color: black;
+
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paragraph_footer{
+    display: flex;
+    flex-direction: column;
+    line-height: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.Links_for_any{
+    display: block;
+    gap: 20px;
+    list-style: none;    
+}
+.socialMediaLinks{
+    position: relative;
+}
+.shopwithcon{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+}
+.sidecontent{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+}
+.quick_links{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+}
+.link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.sociallinkdivv{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.linksdivv{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.externallinks{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.socialmedia{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+}
+.iconss{
+    font-size: 20px;
+    transition: transform 0.2s;
+}
+.iconss:hover{
+    cursor: pointer;
+    transform: scale(1.07);
+}
+a{
+    color: white;
+}
+.socialmedia{
+    color: white;
+   }
+@media only screen and (max-width:453px){
+   .paragraph_footer{
+    line-height: 20px;
+    right: 9px;
+   }
+   .whole_footer{
+    width: 92%;
+    
+   }
+   .socialmedia{
+    color: white;
+   }
+    
+
+}

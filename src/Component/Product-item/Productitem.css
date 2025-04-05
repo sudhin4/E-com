@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.image_{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-self: center;
+}
+.product_name{
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 400;
+    width: 200px;
+    line-height: 20px;
+    position: relative;
+
+}
+.price{
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 600;
+}
+.addtocart{
+    width: 45px;
+    height: 50px;
+    outline: none;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ecf4ff;
+    position: absolute;
+    left: 75%;
+    top: -20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.addtocart:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.addicon{
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
+.Price_btn_div{
+    display: flex;
+    position: relative;
+    bottom: 10px;
+    
+}
+.discount_price{
+    font-family: 'Inter';
+    font-size: 11px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.783);
+    text-decoration: line-through;
+}
+.discount_percentage{
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 600;
+}
+.discount_price_div{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 10px;
+    
+   
+}
+.discount_percentage{
+    background-color: #ecf4ff;
+    padding: 8px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 5px;
+    color: rgba(0, 0, 0, 0.457);
+    
+}
+.card{
+    line-height: 20px;
+}
+.content_sec{
+    line-height: 0.1px;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card{
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+@media only screen and (max-width:453px){
+    .card{
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        height: 50%;
+        gap: 10px;
+    }
+    .image_{
+        width: 100px;
+        height: 100px;
+    }
+    .discount_price{
+        font-size: 13px;
+    }
+    .price{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .product_name{
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.connect_with_us{
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.806);
+}
+.email_inp{
+    width: 400px;
+    height: 40px;
+    padding-left: 20px;
+    font-family: "Inter";
+    font-weight: 400px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.402);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.submit{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    position: relative;
+    top: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+
+}
+.submit:hover{
+    background-color: rgba(44, 43, 43, 0.961);
+    cursor: pointer;
+    transform: scale(1.03);
+}
+.whole_content_contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 70px;
+    background-color: white;
+    
+
+}
+@media only screen and (max-width:453px){
+    .whole_content_contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .connect_with_us{
+        font-size: 16px;
+        font-weight: 400;
+        position: relative;
+        left: 80px;
+    }
+    .email_inp{
+        width: 300px;
+    }
+    .submit{
+        width: 200px;
+        position: relative;
+        bottom: 30px;
+        font-weight: 300;
+    }
+    .btn_Contact_sec{
+        position: relative;
+        bottom: 60px;
+    }
+}

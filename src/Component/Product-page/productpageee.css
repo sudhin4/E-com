@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.whole_product_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagenameee{
+    font-family: "Inter";
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+    left: 28px;
+}
+.pr{
+    color: rgba(0, 0, 0, 0.461);
+}
+.image__{
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    position: relative;
+    top: 20px;
+    
+}
+.content__section{
+    line-height: 18px;
+    position: relative;
+    left: 30px;
+    bottom: 20px;
+}
+.Productnameee{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+}
+.productcategory{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.769);
+}
+
+.discount__price{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: line-through;
+}
+.price_{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.description_heading{
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+.description{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px; 
+}
+.description_div{
+    width: 700px;
+    line-height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.167);
+    padding: 10px;
+    position: relative;
+    left: 25%;
+    border-radius: 10px;
+    top: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+}
+.pagenamesec{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    left: 50px;
+}
+.buy_btn{
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.buy_btn:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.discout_percentage{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.084);
+    border-radius: 5px;
+    width: 35px;
+    padding: 6px;
+    background-color: #ecf4ff;
+}
+
+.price_div{
+    display: flex;
+    position: relative;
+    bottom: 20px;
+}
+.percentage_div{
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+.button_div{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 20px;
+}
+.cart{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.cart:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.logo{
+    font-size: 25px;
+    position: relative;
+    left:40px;
+}
+.logoname{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    
+}
+.logodiv{
+    line-height: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.153);
+    width: 130px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-top: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.Logo_and_name{
+    display: flex;
+    gap: 15px;
+    position: relative;
+    top: 40px;
+}
+.onlinepayment{
+    position: relative;
+    left: 40px;
+}
+.onlinepaymentname{
+    font-size: 14px;
+    position: relative;
+    left: 15px;
+}
+.paymentonly{
+    position: relative;
+    left: 5px;
+}
+.similar_to_buy{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.number{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.whole_box{
+    display: flex;
+    gap: 15px;
+    border: 1px solid black;
+    width: 90px;
+    border-radius:3px ;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.quantitybnt{
+    height: 3%;
+    position: relative;
+    top: 11px;
+    border: none;
+    background-color: white;
+    outline: none;
+    font-size: 24px;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width:453px){
+    .pagenameee{
+        display: none;
+    }
+    .whole_product_page{
+        display: flex;
+        flex-direction: column
+    }
+    .imagesection{
+        width: 90%;
+    }
+    .discount__price{
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.619);
+    }
+    .image__{
+        width: 80%;
+        height: 30%;
+    }
+    .Productnameee{
+        font-size: 20px;
+        width: 320px;
+        font-weight: 500;
+        line-height: 25px;
+        justify-content: center;
+        
+    }
+    .content__section{
+        top: 40px;
+        left: 40px;
+    }
+    .button_div{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+    .price_{
+        font-size: 20px;
+    }
+    .whole_box{
+        width: 75px;
+        gap: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.322);
+        border-radius: 10px;
+    }
+    .logodiv{
+        border: none;
+        box-shadow: none;
+        position: relative;
+        width: 100px;
+        border-radius: 1px;
+        
+    }  
+    .onlinepaymentdiv{
+        border-right: 1px solid rgba(0, 0, 0, 0.963);
+    }
+    .Logo_and_name{
+        right: 40px;
+        
+    }
+    .freeshippingdiv{
+        position: relative;
+        right: 10px;
+        border-right: 1px solid rgba(0, 0, 0, 0.829);
+    }
+    .cashondeliverydiv{
+        position: relative;
+        right: 40px;
+    }
+    .cashondeliveryname{
+        line-height: 15px;
+        width: 60px;
+        position: relative;
+        bottom: 10px;
+        left: 24px;
+    }
+    .description{
+        font-size: 15px;
+        width: 85%;
+    }
+    .description_div{
+        width: 85%;
+        position: relative;
+        left: 14px;
+        top: 110px;
+    }
+    .buy_btn{
+        width: 80%;
+    }
+    .Footer_productPage{
+        position: relative;
+        top: 50px;
+    }
+
+}

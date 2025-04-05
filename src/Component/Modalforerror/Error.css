@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.Publishcontent {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Continue {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 14px;
+    outline: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    transition: transform 0.3s;
+
+
+}
+
+.Continue:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.Icon {
+    font-size: 39px;
+    color: white;
+    position: relative;
+    left: 45%;
+    border: 1px solid rgba(0, 0, 0, 0.009);
+    border-radius: 50%;
+    background-color: green;
+}
+
+.publishModalfull {
+    border: 1px solid rgb(190, 185, 185);
+    line-height: 10px;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttonscontinue_add {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+@media only screen and (max-width:453px) {
+   
+    .publishModalfull {
+        position: absolute;
+        width: 70%;
+    }
+    .Icon{
+        font-size: 30px;
+    }
+
+    .buttonscontinue_add {
+        display: block;
+    }
+    .Continue{
+        position: relative;
+        left: 80px;
+    }
+    .Publishcontent{
+        font-size: 15px;
+        width: 90%;
+        left: 30px;
+    }
+    
+}

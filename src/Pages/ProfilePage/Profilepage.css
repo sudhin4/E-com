@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.whole_profile_picture_div{
+    display: flex;
+    gap: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.215);
+    padding: 10px;
+    width: 334px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.profile_imagee{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.profile_info_div{
+    line-height: 10px;
+}
+.profile_user_name_h2{
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 600;
+}
+.profile_email_id_p{
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    width: 200px;
+    word-wrap: break-word;
+    line-height: 15px;
+}
+.Logooo{
+    font-size: 18px;
+}
+.my_orders_p{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.724);
+}
+
+.content_divv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    
+}
+.content_divv:hover{
+    background-color: rgba(209, 206, 206, 0.47);
+    cursor: pointer;
+    
+}
+.Main_profile_content_div{
+    border: 1px solid rgba(118, 116, 116, 0.409);
+    border-radius: 5px;
+    width: 352px;
+    margin-top: 10px;
+    height: 110%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.right_section_div{
+   width: 69%;
+   height: 96%;
+   position: absolute;
+   left: 30%;
+   border: 1px solid rgba(0, 0, 0, 0.215); 
+   border-radius: 10px;
+   
+   
+}
+.full_content_section_comp{
+    display: flex;
+    gap: 10px;
+}
+.loginbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.LoginSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    line-height: 5px;
+}
+.first_login{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 27px;
+}
+.Sinupbutton{
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    transition: transform 0.1s;
+}
+.Sinupbutton:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.right_section_div{
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+}
+.Editname_overlay{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.42);
+}
+.Editname_open{
+    position: fixed;
+    z-index: 111;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
+    border-radius: 5px;
+    left: 45%;
+    top: 30%;
+}
+@media only screen and (max-width:453px){
+    
+
+}
+

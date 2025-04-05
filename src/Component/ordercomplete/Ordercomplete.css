@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.whole_component_order_complete{
+    width: 300;
+    height: max-content;
+    border: 1px solid rgba(0, 0, 0, 0.283);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.Logo_for_complete{
+    font-size: 40px;
+    color: green;
+    position: relative;
+    left: 80px;
+}
+.Heading_complete{
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 16px;
+    color: green;
+    
+}
+.check_the_details{
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    position: relative;
+    left: 20px;
+}
+@media only screen and (max-width:453px){
+    .whole_component_order_complete{
+        width: 70%;
+        
+    }
+    .Heading_complete{
+        position: relative;
+        left: 10px;
+    }
+    .Logo_for_complete{
+        position: relative;
+        left: 80px;
+    }
+    .check_the_details{
+        position: relative;
+        left: 25px;
+    }
+}

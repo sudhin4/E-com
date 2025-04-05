@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.name_edit_inp{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    width: 300px;
+    height: 12px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.189);
+    border-radius: 2px;
+    outline: none;
+}
+.input_editmodal{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+.Email{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    width: 300px;
+    height: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.171);
+    border-radius: 2px;
+    outline: none;
+}
+.Submit_btnmodal{
+    width: 320px;
+    height: 35px;
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    position: relative;
+    top: 20px;
+
+}
+.Submit_btnmodal:hover{
+    background-color: rgba(0, 0, 0, 0.792);
+    transition: 0.3ms;
+    cursor: pointer;
+}
+.whole_modal{
+    border: 1px solid rgba(0, 0, 0, 0.265);
+    width: fit-content;
+    height: 150px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+    background-color: rgb(254, 254, 254);
+    left: 45%;
+    top: 25%;
+
+}
+.close_mark__{
+    width: 20px;
+    height: 20px;
+    font-size: 27px;
+    color: rgba(0, 0, 0, 0.644);
+    border: none;
+    background-color: rgba(245, 245, 220, 0.329);
+    position: relative;
+    left: 290px;
+    bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: none;
+
+}
+.close_mark__:hover{
+    cursor: pointer;
+    color: black;
+}
+.error_section{
+    font-family: 'Inter';
+    font-weight: 250;
+    font-size: 10px;
+    color:  red;
+    position: absolute;
+    top: 61%;
+}
+
+@media only screen and (max-width:453px){
+    .whole_modal{
+        position: relative;
+        left: -15px;
+        width: 95%;
+        height: 200px;
+    }
+    .close_mark__{
+        display: block;
+        left: 270px;
+    }
+    .name_edit_inp{
+        width: 80%;
+    }
+    .Email{
+        width: 80%;
+    }
+    .Submit_btnmodal{
+        width: 90%;
+    }
+}

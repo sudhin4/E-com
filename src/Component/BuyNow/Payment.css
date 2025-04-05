@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.box_payment{
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.269);
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px ;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+.label_for_pa{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 17px;
+    position: relative;
+    left: 20px;
+}
+.full_payment_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.251);
+    border-radius: 10px;
+    width: max-content;
+    height: fit-content;
+    padding: 20px;
+    left: 33%;
+}
+.PaymentmethodHeading{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 29px;
+}
+.downarrowcard{
+    position: relative;
+    left: 200px;
+    top: 4px;
+    color: rgba(0, 0, 0, 0.509);
+}
+.downarrowupi{
+    position: relative;
+    left: 253px;
+    top: 4px;
+    color: rgba(0, 0, 0, 0.509);
+}
+.card_checkBox{
+    font-size: 30px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* card and upi payment */
+.card_details_heading{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    top: 20px;
+    left: 5px;
+}
+.Card_Number{
+    outline: none;
+    width: 300px;
+    height: 20px;
+    font-family: 'Inter';
+    font-weight: 4  00;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.285);
+    border-radius: 5px;
+    margin: 6px;
+}
+.validYear{
+    outline: none;
+    width: 100px;
+    height: 30px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.345);
+    border-radius: 5px;
+}
+.cvvNumber{
+    outline: none;
+    width: 100px;
+    height: 30px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.345);
+    border-radius: 5px;
+}
+.year_and_cvv{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: 5px;
+}
+.whole_divcard_payment{
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    max-width: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: -5px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.QrImage{
+    width: 250px;
+    height: 250px;
+}
+.upi_heading{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+}
+.whole_div_upi{
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.217);
+    max-width: 360px;
+    padding: 5px;
+    padding-top: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.btnnnn{
+    width: 120px;
+    height: 40px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    bottom: 50px;
+    left: 40%;
+    border: 1px solid rgba(0, 0, 0, 0.356);
+    outline: none;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+.btnnnn:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.Place_order{
+    color: white;
+    background-color: black;
+}
+.buttons_payment{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 60px;
+    right: 110px;
+}
+.terms_condition{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+    color: rgba(0, 0, 0, 0.847);
+}
+
+.modal_overlay{
+   position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.477);
+    z-index: 10;
+}
+.Modal_open{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    z-index: 100;
+    border-radius: 10px;
+ 
+}
+.Payment_details__{
+    display: none;
+}
+
+@media only screen and (max-width:453px){
+    .full_payment_div{
+        display: flex;
+        position: relative;
+        left: 10px;
+        width: 80%;
+    }
+    *{
+        scroll-behavior: smooth;
+    }
+    
+    .Payment_details__{
+        display: block;
+    }
+    .box_payment{
+        width: 95%;
+    }
+    .year_and_cvv{
+        width: 100px;
+    }
+    .Card_Number{
+        width: 200px;
+        font-size: 13px;
+    }
+    .validYear{
+        width: 50px;
+        font-size: 12px;
+    }
+    .cvvNumber{
+        width: 50px;
+        font-size: 12px;
+    }
+    .card_details_heading{
+        font-size: 18px;
+    }
+    .Modal_open{
+        
+        width: 90%;
+        
+    }
+    .PaymentmethodHeading{
+        font-weight: 300;
+    }
+    
+}

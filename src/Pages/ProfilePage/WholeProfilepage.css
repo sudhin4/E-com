@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.product_imagee {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  position: relative;
+  left: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.153);
+}
+
+.ProductNamee {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 14px;
+  width: 200px;
+  word-wrap: normal;
+  position: relative;
+  left: 10px;
+
+}
+
+.Pricee {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  position: relative;
+  left: 50px;
+}
+
+.Buybtnn {
+  width: 100px;
+  height: 35px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  left: 40px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.Buybtnn:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+
+.whole_cardd {
+  border: 1px solid rgba(0, 0, 0, 0.265);
+  width: max-content;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.whole_component {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.addproductbtn {
+  position: absolute;
+  bottom: 2%;
+  left: 85%;
+}
+
+.noitem {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notitemserror {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 30px;
+  position: relative;
+  bottom: 40px;
+  left: 30px;
+}
+
+.Noitems_div {
+  position: relative;
+  top: 15%;
+  left: 35%;
+}
+
+.return_addproductbtn {
+
+  width: 100px;
+  height: 35px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  bottom: 50px;
+  left: 40px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.return_addproductbtn:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+
+.editpencil {
+  position: absolute;
+  font-size: 20px;
+  left: 25%;
+  top: 20%;
+  cursor: pointer;
+}
+
+.editbtn {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  left: 23%;
+  top: 19%;
+}
+
+@media only screen and (max-width:453px) {
+  .noitem {
+    width: 250px;
+    height: 200px;
+  }
+
+  .returnButton {
+    display: none;
+  }
+
+  .whole_cardd {
+    padding: 10px;
+    width: 90%;
+    height: 100px;
+  }
+
+  .product_imagee {
+    position: relative;
+    width: 140px;
+    height: 100px;
+    left: 5px;
+  }
+
+  .Buybtnn {
+    width: 70px;
+    top: 60px;
+    font-size: 12px;
+  }
+  .Buy_likee{
+    position: absolute;
+    left: 220px;
+    
+    
+  }
+
+  .Pricee {
+    position: relative;
+    left: 10px;
+  }
+
+  .whole_card_contentt {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .Name_and_price_div_produc {
+    display: flex;
+    flex-direction: column;
+  }
+  .ProductNamee{
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+}

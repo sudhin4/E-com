@@ -1,0 +1,67 @@
+@media only screen and (max-width:453px) {
+    .whole_profile_picture_div {
+        width: 93%;
+        border-radius: 15px;
+        color: white;
+        background: #000046;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+    }
+
+    .editbtn{
+        position: absolute;
+        top: 115px;
+        left: 280px;
+        color: white;
+        background: none;
+    }
+
+    .overlay-editname_section {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vh;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.406);
+        z-index: 10;
+    }
+
+    .edit_name_component {
+        position: absolute;
+        z-index: 11;
+        left: 25px;
+        top: 75px;
+    }
+
+    .Logooo {
+        font-size: 26px;
+        color: rgba(0, 0, 0, 0.612);
+    }
+
+    .my_orders_p {
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.74);
+    }
+
+    .Main_profile_content_div {
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        height: 650px;
+
+    }
+
+    .profile_imagee {
+        width: 80px;
+        height: 80px;
+    }
+
+    .content_divv {
+        margin: 5px;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.107);
+    }
+
+}

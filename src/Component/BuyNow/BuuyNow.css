@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+.Deatils_for_delivery_heading{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.personal_Details{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+    color: rgba(0, 0, 0, 0.614);
+    position: relative;
+    
+}
+.Getting_detail_name_email{
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    width: 700px;
+    padding-left: 20px;
+    padding-bottom:20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 15px;
+    background-color: #ecf4ff4b;
+}
+.Logo_buyNow{
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+    display: flex;
+    color: rgba(0, 0, 0, 0.767);
+}
+.Input{
+    width: 400px;
+    height: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px;
+    outline: none;
+    border-radius: 5px;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.Address_section{
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    width: 700px;
+    padding-left: 20px;
+    padding-bottom:20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: #ecf4ff65;
+}
+
+.Buybutton{
+    width: 120px;
+    height: 40px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    position: relative;
+    bottom: 50px;
+    left: 40%;
+    border: 1px solid rgba(0, 0, 0, 0.356);
+    outline: none;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+.Buybutton:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.Button_section{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 80px;
+    right: 30px;
+    
+}
+.Pay_btn{
+    color: white;
+    background-color: black;
+}
+.WHOLE_DIV{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.Price_details_section{
+   position: relative;
+   top: 75px;
+    
+}
+.labelll{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.45);
+    position: relative;
+    left: 10px;
+}
+
+@media only screen and (max-width:453px)
+{
+    .WHOLE_DIV{
+        display: flex;
+        flex-direction: column;
+        gap: -0px;
+    }
+    .Deatils_for_delivery_heading{
+        font-size: 18px;
+        position: relative;
+        right: 95px;
+    }
+    .User{
+        font-size: 24px;
+    }
+    .Input{
+        width: 250px;
+    }
+    .WholeBuyNowdiv{
+        position: relative;
+        right: 15px;
+        
+    }
+    .Getting_detail_name_email{
+        width: 90%;
+        padding-top: 10px;
+        padding: 10px;
+    }
+    .personal_Details{
+        display: flex;
+        gap: 5px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .User{
+        font-size: 25px;
+        position: relative;
+        top: -1px;
+    }
+    .labelll{
+        font-size: 15px;
+    }
+    .Address_section{
+        width: 90%;
+        padding: 10px;
+        padding-top: 10px;
+    }
+    .Address_section_heading{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+
+    }
+    .address_logo{
+        position: relative;
+        top: 1px;
+    }
+    .Button_section{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 125px;
+    }
+    .Buybutton{
+        height: 50px;
+        width: 90%;
+    }
+    .Cancel_btn{
+        display: none;
+    }
+    .Price_detail{
+        display: none;
+    }
+    
+    .card_details_heading{
+        font-size: 12px;
+    }
+    .whole_divcard_payment{
+        width: 90%;
+    }
+    .Card_Number{
+        width: 70%;
+        font-size: 16px;
+    }
+    .year_and_cvv{
+        width: 100px;
+    }
+
+    
+}
+
+
+
