@@ -5,6 +5,8 @@ import { RiCustomerService2Fill } from "react-icons/ri";
 import '../MobileThreebtnfunction/Mobileoptions.css'
 import { IoClose } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
+import { IoHome } from "react-icons/io5";
+
 
 
 
@@ -23,12 +25,25 @@ function Mobilesidebar({closesidebarfun}){
             navigate(`/mobilemyproductpage`)
             closesidebarfun(false)
         }
+        else if(value === "customersupport"){
+            navigate(`\Contact_us`);
+            closesidebarfun(false)
+        }
+        else if(value === "Home"){
+            navigate(`/`);
+            closesidebarfun(false)
+        }
     }
 
     return(
         <>
         <div className="Wolesidebar">
         <IoClose className="close_mark_sidebar" onClick={()=>closesidebarfun(false)}/>
+        <div className="Profile_sidebar sidebar_div" onClick={()=>naviagatepage("Home")}>
+            <IoHome className="logo_side profile_logo"/>
+            <h3 className="Profile_heading heading_sideBar">Home</h3>
+            </div>
+
             <div className="Profile_sidebar sidebar_div" onClick={()=>naviagatepage("myprofile")}>
             <FaRegUserCircle className="logo_side profile_logo"/>
             <h3 className="Profile_heading heading_sideBar">Profile</h3>

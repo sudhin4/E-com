@@ -43,6 +43,7 @@ import PhoneImage from "./Component/PhoneImage/PhoneImage.jsx";
 import Mobilesidebar from "./Component/MobileThreebtnfunction/Mobileoptions.jsx";
 import ProfileMobilepage from "./Component/Header/Mobileprofilepage.jsx";
 import Myproductpagemobile from "./Pages/Mobilepages/mymobilproduct.jsx";
+import ContactPage from "./Pages/ContactPage/Contactpage.jsx";
 
 function App() {
   let inputobject = [];
@@ -395,6 +396,10 @@ function App() {
                   </div>
                 }
               />
+              <Route path="/Contact_us"
+              element={
+                <ContactPage/>
+              }/>
 
               <Route
                 path="/mobilemyproductpage"

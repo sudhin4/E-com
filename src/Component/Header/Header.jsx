@@ -10,10 +10,8 @@ import { Cartvalues } from "../../Data/Context";
 import { IoReorderThreeOutline } from "react-icons/io5";
 import Footer from "../Footer/Footer";
 
-
-function Header({ image, clickvalue, getvalue,sidebaropenfun }) {
-
-  const navigate = useNavigate()
+function Header({ image, clickvalue, getvalue, sidebaropenfun }) {
+  const navigate = useNavigate();
   const placeholdername = [
     " Search 'Mobiles'",
     "Search 'Home Appliances'",
@@ -54,11 +52,19 @@ function Header({ image, clickvalue, getvalue,sidebaropenfun }) {
   return (
     <>
       <div className="Header">
-        <div className="mobiel_hamburger_logo" onClick={()=>sidebaropenfun(true)}>
-        <IoReorderThreeOutline className="Hamburger_logo" />
+        <div
+          className="mobiel_hamburger_logo"
+          onClick={() => sidebaropenfun(true)}
+        >
+          <IoReorderThreeOutline className="Hamburger_logo" />
         </div>
         <div className="logo_sec">
-          <img src={image} alt="Icon" className="img" onClick={()=>navigate("/")} />
+          <img
+            src={image}
+            alt="Icon"
+            className="img"
+            onClick={() => navigate("/")}
+          />
           <h3 className="Logo">E-Com</h3>
           <IoMdSearch className="searchicon" />
           <input
@@ -82,23 +88,23 @@ function Header({ image, clickvalue, getvalue,sidebaropenfun }) {
               <Link to="/Myprofile">
                 <li className="dropdown product">My Profile</li>
               </Link>
-              <li className="dropdown customer">Contact</li>
+              <Link to="/Contact_us">
+                <li className="dropdown customer">Contact</li>
+              </Link>
+
               <li className="dropdown setting">Settings</li>
               <li className="dropdown signin" onClick={handleopensignup}>
                 Sign in
               </li>
             </div>
           </button>
-          
+
           <FaCartShopping className="icons" onClick={() => clickvalue(true)} />
-          <span className={`cartsection numberofitems ${cartitems ? "opennn" : ""}`}></span>
+          <span
+            className={`cartsection numberofitems ${cartitems ? "opennn" : ""}`}
+          ></span>
         </div>
-        
-      
-      
       </div>
-      
-      
     </>
   );
 }
