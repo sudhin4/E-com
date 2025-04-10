@@ -44,6 +44,9 @@ import Mobilesidebar from "./Component/MobileThreebtnfunction/Mobileoptions.jsx"
 import ProfileMobilepage from "./Component/Header/Mobileprofilepage.jsx";
 import Myproductpagemobile from "./Pages/Mobilepages/mymobilproduct.jsx";
 import ContactPage from "./Pages/ContactPage/Contactpage.jsx";
+import { myorders } from "./Data/Context.js";
+import Myorders from "./Pages/Myorders/Myorders.jsx";
+import Myordermap from "./Pages/Myorders/Myordermap.jsx";
 
 function App() {
   let inputobject = [];
@@ -202,13 +205,20 @@ function App() {
   // Function to delete the items
 
   function deleteitem(deleteid, idcategory) {
-    
     setpushdata((prevdata) => ({
       ...prevdata,
       [idcategory]: prevdata[idcategory].filter((item) => item.id !== deleteid),
     }));
   }
 
+  // myoders function section
+
+  const [myordersstate, setmyorderstate] = useState();
+
+  function addmyoderfunctionid(value){
+    
+    setmyorderstate(value)
+  }
   
 
   return (
@@ -216,204 +226,206 @@ function App() {
       <Contextvalue.Provider value={getdata}>
         <BrowserRouter>
           <Cartvalues.Provider value={filteritem}>
-            <div
-              className={`addtocart_component ${iscartopen ? "open" : ""}`}
-              id="cartcomponent"
-            >
-              <Addtocart
-                closebuttonvalue={closebtncartvalue}
-                productvalues={pushdata}
-                getcartprice={handlegetcartprice}
+            <myorders.Provider value={myordersstate}>
+              <div
+                className={`addtocart_component ${iscartopen ? "open" : ""}`}
+                id="cartcomponent"
+              >
+                <Addtocart
+                  closebuttonvalue={closebtncartvalue}
+                  productvalues={pushdata}
+                  getcartprice={handlegetcartprice}
+                />
+              </div>
+
+              <div
+                className={`mobilesidebar_component ${
+                  issidebaropen ? "open" : ""
+                }`}
+              >
+                <Mobilesidebar closesidebarfun={sidebaropenfunction} />
+              </div>
+
+              <Header
+                image={Baglog}
+                click={handleOpen}
+                getvalue={handlegetLogindata}
+                clickvalue={getcartopenclose}
+                sidebaropenfun={sidebaropenfunction}
               />
-            </div>
+              <div className="signup_sec">
+                {loginopen && (
+                  <Signup click={handleClose} getclosevalue={closelogindata} />
+                )}
+              </div>
+              <Routes>
+                <Route
+                  path="/"
+                  element={
+                    <>
+                      <Silder image={fimages} />
+                      <h1 className="Products_heading">Products</h1>
+                      <div className="Products_item">
+                        <Link to="/Mobiles">
+                          <Products
+                            Images={ProductsImage[0].src}
+                            para={ProductsImage[0].para}
+                          />
+                        </Link>
+                        <Link to="/HomeAppliance">
+                          <Products
+                            Images={ProductsImage[1].src}
+                            para={ProductsImage[1].para}
+                          />
+                        </Link>
+                        <Link to="/Shoes">
+                          <Products
+                            Images={ProductsImage[2].src}
+                            para={ProductsImage[2].para}
+                          />
+                        </Link>
+                        <Link to="/Bags">
+                          <Products
+                            Images={ProductsImage[3].src}
+                            para={ProductsImage[3].para}
+                          />
+                        </Link>
+                        <Link to="/Watches">
+                          <Products
+                            Images={ProductsImage[4].src}
+                            para={ProductsImage[4].para}
+                          />
+                        </Link>
+                        <Link to="/Dresses">
+                          <Products
+                            Images={ProductsImage[5].src}
+                            para={ProductsImage[5].para}
+                          />
+                        </Link>
+                        <Link to="/Perfumes">
+                          <Products
+                            Images={ProductsImage[6].src}
+                            para={ProductsImage[6].para}
+                          />
+                        </Link>
+                      </div>
+                      {/** The MobileOnly render */}
+                      <div className="mobileProductsection">
+                        <PhoneImage />
+                      </div>
 
-            <div
-              className={`mobilesidebar_component ${
-                issidebaropen ? "open" : ""
-              }`}
-            >
-              <Mobilesidebar closesidebarfun={sidebaropenfunction} />
-            </div>
+                      <Center />
 
-            <Header
-              image={Baglog}
-              click={handleOpen}
-              getvalue={handlegetLogindata}
-              clickvalue={getcartopenclose}
-              sidebaropenfun={sidebaropenfunction}
-            />
+                      <div className="whole_product_card">
+                        {mainpagedata.map((item) => (
+                          <Productcartcomponent key={item.id} item={item} />
+                        ))}
+                      </div>
 
-            <div className="signup_sec">
-              {loginopen && (
-                <Signup click={handleClose} getclosevalue={closelogindata} />
-              )}
-            </div>
-
-            <Routes>
-              <Route
-                path="/"
-                element={
-                  <>
-                    <Silder image={fimages} />
-                    <h1 className="Products_heading">Products</h1>
-                    <div className="Products_item">
-                      <Link to="/Mobiles">
-                        <Products
-                          Images={ProductsImage[0].src}
-                          para={ProductsImage[0].para}
+                      <div className="seller_image_content">
+                        <Sellersec
+                          img={SellerImg}
+                          headphone={headphoneImg}
+                          trainimg={trainImg}
+                          watchImg={watchimg}
                         />
-                      </Link>
-                      <Link to="/HomeAppliance">
-                        <Products
-                          Images={ProductsImage[1].src}
-                          para={ProductsImage[1].para}
-                        />
-                      </Link>
-                      <Link to="/Shoes">
-                        <Products
-                          Images={ProductsImage[2].src}
-                          para={ProductsImage[2].para}
-                        />
-                      </Link>
-                      <Link to="/Bags">
-                        <Products
-                          Images={ProductsImage[3].src}
-                          para={ProductsImage[3].para}
-                        />
-                      </Link>
-                      <Link to="/Watches">
-                        <Products
-                          Images={ProductsImage[4].src}
-                          para={ProductsImage[4].para}
-                        />
-                      </Link>
-                      <Link to="/Dresses">
-                        <Products
-                          Images={ProductsImage[5].src}
-                          para={ProductsImage[5].para}
-                        />
-                      </Link>
-                      <Link to="/Perfumes">
-                        <Products
-                          Images={ProductsImage[6].src}
-                          para={ProductsImage[6].para}
-                        />
-                      </Link>
-                    </div>
-                    {/** The MobileOnly render */}
-                    <div className="mobileProductsection">
-                      <PhoneImage />
-                    </div>
+                      </div>
+                      <div className="contact_sec">
+                        <Contact />
+                      </div>
+                      <div className="Footer_app">
+                        <Footer />
+                      </div>
+                    </>
+                  }
+                />
 
-                    <Center />
-
-                    <div className="whole_product_card">
-                      {mainpagedata.map((item) => (
-                        <Productcartcomponent key={item.id} item={item} />
-                      ))}
-                    </div>
-
-                    <div className="seller_image_content">
-                      <Sellersec
-                        img={SellerImg}
-                        headphone={headphoneImg}
-                        trainimg={trainImg}
-                        watchImg={watchimg}
-                      />
-                    </div>
-                    <div className="contact_sec">
-                      <Contact />
-                    </div>
-                    <div className="Footer_app">
-                      <Footer />
-                    </div>
-                  </>
-                }
-              />
-
-              <Route
-                path="/Addproduct"
-                element={
-                  <Addproductmodal
-                    getdata={handlegetdatafunction}
-                    getimagelink={handleimagelink}
-                    getcategoryvalue={get_categoryvalue}
-                  />
-                }
-              />
-              <Route
-                path="/Myprofile"
-                element={
-                  <Profilepage
-                    data={getdata}
-                    getclosevalue={closelogindata}
-                    productremovefunction={deleteitem}
-                  />
-                }
-              />
-              <Route
-                path="/product/:id"
-                element={
-                  <Mainpageproductpage
-                    carddatavalue={mainpagedata}
-                    getidfrom={handlegetmainpgeprice}
-                    gettingaddtocartfun={getaddtocartvalues}
-                  />
-                }
-              ></Route>
-              <Route
-                path="/:category/:id"
-                element={
-                  <Productpage
-                    data={pushdata}
-                    carddata={cardData}
-                    gettingaddtocartfun={getaddtocartvalues}
-                    sendidfrombuy={getpricefromproduct}
-                  />
-                }
-              />
-              <Route
-                path="/:category"
-                element={<Categorymapsec data={pushdata} />}
-              />
-              <Route
-                path="/:id/BuyNow"
-                element={<BuyNow pricedetail={getprice} />}
-              />
-              <Route
-                path="/cart/BuyNow"
-                element={<BuyNow pricedetail={getcartprice} />}
-              />
-              <Route
-                path="/Paymentgatway"
-                element={<Payment pricedetail={getprice} />}
-              />
-              <Route
-                path="/mobileprofilepage"
-                element={
-                  <div className="Profile_page_for_mobile">
-                    <ProfileMobilepage  />
-                  </div>
-                }
-              />
-              <Route path="/Contact_us"
-              element={
-                <ContactPage/>
-              }/>
-
-              <Route
-                path="/mobilemyproductpage"
-                element={
-                  <div className="mobilemyproductpage">
-                    <Myproductpagemobile
+                <Route
+                  path="/Addproduct"
+                  element={
+                    <Addproductmodal
+                      getdata={handlegetdatafunction}
+                      getimagelink={handleimagelink}
+                      getcategoryvalue={get_categoryvalue}
+                    />
+                  }
+                />
+                <Route
+                  path="/Myprofile"
+                  element={
+                    <Profilepage
                       data={getdata}
                       getclosevalue={closelogindata}
                       productremovefunction={deleteitem}
                     />
-                  </div>
-                }
-              />
-            </Routes>
+                  }
+                />
+                <Route
+                  path="/product/:id"
+                  element={
+                    <Mainpageproductpage
+                      carddatavalue={mainpagedata}
+                      getidfrom={handlegetmainpgeprice}
+                      gettingaddtocartfun={getaddtocartvalues}
+                    />
+                  }
+                ></Route>
+                <Route
+                  path="/:category/:id"
+                  element={
+                    <Productpage
+                      data={pushdata}
+                      carddata={cardData}
+                      gettingaddtocartfun={getaddtocartvalues}
+                      sendidfrombuy={getpricefromproduct}
+                      getidfrommyorder = {addmyoderfunctionid}
+                    />
+                  }
+                />
+                <Route
+                  path="/:category"
+                  element={<Categorymapsec data={pushdata} />}
+                />
+                <Route
+                  path="/:id/BuyNow"
+                  element={<BuyNow pricedetail={getprice} myordergetfun={addmyoderfunctionid} />}
+                />
+                
+                <Route
+                  path="/cart/BuyNow"
+                  element={<BuyNow pricedetail={getcartprice} />}
+                />
+                <Route
+                  path="/Paymentgatway"
+                  element={<Payment pricedetail={getprice} />}
+                />
+                <Route
+                  path="/mobileprofilepage"
+                  element={
+                    <div className="Profile_page_for_mobile">
+                      <ProfileMobilepage />
+                    </div>
+                  }
+                />
+                <Route path="/Contact_us" element={<ContactPage />} />
+                <Route
+                  path="/Myoders"
+                  element={<Myordermap data={pushdata} />}
+                />
+                <Route
+                  path="/mobilemyproductpage"
+                  element={
+                    <div className="mobilemyproductpage">
+                      <Myproductpagemobile
+                        data={getdata}
+                        getclosevalue={closelogindata}
+                        productremovefunction={deleteitem}
+                      />
+                    </div>
+                  }
+                />
+              </Routes>
+            </myorders.Provider>
           </Cartvalues.Provider>
         </BrowserRouter>
       </Contextvalue.Provider>

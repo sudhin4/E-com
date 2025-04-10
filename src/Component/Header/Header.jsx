@@ -88,9 +88,12 @@ function Header({ image, clickvalue, getvalue, sidebaropenfun }) {
               <Link to="/Myprofile">
                 <li className="dropdown product">My Profile</li>
               </Link>
+              <Link to="/Myoders"><li className="dropdown myorders"></li></Link>
+              
               <Link to="/Contact_us">
                 <li className="dropdown customer">Contact</li>
               </Link>
+              
 
               <li className="dropdown setting">Settings</li>
               <li className="dropdown signin" onClick={handleopensignup}>

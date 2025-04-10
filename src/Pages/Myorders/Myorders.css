@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.My_orders_heading{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 25px;
+}
+.productimage{
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.379);
+    border-radius: 10px;
+}
+.productname_heading{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    width: 250px;
+}
+.productprice_in_myorders{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 14px;
+}
+.order_id_heading{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 17px;
+}
+.delivery_date_heading{
+    font-family: 'inter';
+    font-size: 17px;
+    font-weight: 600;
+    width: max-content;
+}
+.delivery_id{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+}
+.delivery_date{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+}
+.whole_content_myoders{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+}
+.SUbdiv_for_myproduct{
+    display: flex;
+    gap: 40px;
+    
+    align-items: center;
+}
+.buttons_for_myproducts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    left: 40px;
+}
+.view_more_btn_for_myproduct{
+    color: black;
+    background-color: white;
+    width: 120px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: transform 0.4s;
+    
+}
+.Cancel_order_btn_for_myproduct{
+    color: white;
+    background-color: red;
+    width: 120px;
+    height: 30px;
+    border: none;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: transform 0.4s;
+    
+}
+.Cancel_order_btn_for_myproduct:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.view_more_btn_for_myproduct:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}

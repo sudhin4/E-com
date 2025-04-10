@@ -6,21 +6,16 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Footer from "../Footer/Footer";
 
-function Productpage({ data,gettingaddtocartfun,sendidfrombuy }) {
-
+function Productpage({ data, gettingaddtocartfun, sendidfrombuy,getidfrommyorder }) {
   const navigate = useNavigate();
   const { id, category } = useParams();
   const product = data[category]?.find((item) => item.id === parseInt(id));
 
-   if(!product) return<h1>The product Not Found</h1>
-
-  
+  if (!product) return <h1>The product Not Found</h1>;
 
   const [quantity, setquantity] = useState(1);
-  const [storevalue,setstorevalue]=useState([]);
-  const [getid,setgetid]= useState();
-  
-  
+  const [storevalue, setstorevalue] = useState([]);
+  const [getid, setgetid] = useState();
 
   function addbtn() {
     setquantity(quantity + 1);
@@ -29,31 +24,22 @@ function Productpage({ data,gettingaddtocartfun,sendidfrombuy }) {
     setquantity(quantity - 1);
   }
 
-  
-
-  
-  
-
-  
-
-  useEffect(()=>{
-    if(getid!==null){
-      setstorevalue((prev)=>[...prev,getid])
+  useEffect(() => {
+    if (getid !== null) {
+      setstorevalue((prev) => [...prev, getid]);
     }
-  },[getid])
-  
-  useEffect(()=>{
-    gettingaddtocartfun(getid)
-  },[storevalue])
+  }, [getid]);
 
-  function sendanotherpage(id){
-    navigate(`/${id}/BuyNow`)
-    sendidfrombuy(product.Price)
+  useEffect(() => {
+    gettingaddtocartfun(getid);
+  }, [storevalue]);
+
+  function sendanotherpage(id) {
+    navigate(`/${id}/BuyNow`);
+    sendidfrombuy(product.Price);
+    getidfrommyorder(product.id)
   }
 
-  
-  
-  
   return (
     <>
       <div className="pagenamesec">
@@ -90,9 +76,19 @@ function Productpage({ data,gettingaddtocartfun,sendidfrombuy }) {
           </div>
 
           <div className="button_div">
-            <button className="buy_btn buy" onClick={()=>sendanotherpage(product.id)}>Buy Now</button>
+            <button
+              className="buy_btn buy"
+              onClick={() => sendanotherpage(product.id)}
+            >
+              Buy Now
+            </button>
             <br />
-            <button className="buy_btn cart" onClick={()=>setgetid(product.id,product.category )}>Add to cart</button>
+            <button
+              className="buy_btn cart"
+              onClick={() => setgetid(product.id, product.category)}
+            >
+              Add to cart
+            </button>
             <br />
           </div>
 
@@ -120,7 +116,7 @@ function Productpage({ data,gettingaddtocartfun,sendidfrombuy }) {
         <p2 className="description">{product.discription}</p2>
       </div>
       <div className="Footer_productPage">
-        <Footer/>
+        <Footer />
       </div>
     </>
   );

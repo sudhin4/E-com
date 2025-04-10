@@ -134,7 +134,7 @@ function Profilepage({ productremovefunction }) {
           </div>
         </div>
 
-        <div className="right_section_div">
+         <div className="right_section_div">
           {value ? (
             myproductvaluestate.map((item) => (
               <div key={item.id} className="Myproductdivsection">
@@ -161,7 +161,8 @@ function Profilepage({ productremovefunction }) {
               </button>
             </div>
           )}
-        </div>
+        </div> 
+
 
         {openedit ? (
           <>

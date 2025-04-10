@@ -50,7 +50,7 @@ function BuyNow({ pricedetail }) {
             <label htmlFor="Name" className="labelll">
               Name*
             </label>
-            <br/>
+            <br />
             <input
               type="text"
               placeholder="Name"
