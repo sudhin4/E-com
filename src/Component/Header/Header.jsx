@@ -86,9 +86,9 @@ function Header({ image, clickvalue, getvalue, sidebaropenfun }) {
             <FaRegCircleUser className="usericons " />
             <div className="hoverclass">
               <Link to="/Myprofile">
-                <li className="dropdown product">My Profile</li>
+                <li className="dropdown product_">My Profile</li>
               </Link>
-              <Link to="/Myoders"><li className="dropdown myorders"></li></Link>
+              <Link to="/Myoders"><li className="dropdown myorders">My Orders</li></Link>
               
               <Link to="/Contact_us">
                 <li className="dropdown customer">Contact</li>

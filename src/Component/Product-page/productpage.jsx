@@ -2,11 +2,18 @@ import "../Product-page/productpageee.css";
 import { MdOutlinePayment } from "react-icons/md";
 import { BsCash } from "react-icons/bs";
 import { RiTruckLine } from "react-icons/ri";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Footer from "../Footer/Footer";
+import { myorders } from "../../Data/Context";
 
-function Productpage({ data, gettingaddtocartfun, sendidfrombuy,getidfrommyorder }) {
+function Productpage({
+  data,
+  gettingaddtocartfun,
+  sendidfrombuy,
+  getproductarray,
+  getmyorderproduct,
+}) {
   const navigate = useNavigate();
   const { id, category } = useParams();
   const product = data[category]?.find((item) => item.id === parseInt(id));
@@ -37,7 +44,9 @@ function Productpage({ data, gettingaddtocartfun, sendidfrombuy,getidfrommyorder
   function sendanotherpage(id) {
     navigate(`/${id}/BuyNow`);
     sendidfrombuy(product.Price);
-    getidfrommyorder(product.id)
+    // getidfrommyorder(product.id)
+    getproductarray(product); // send product
+    getmyorderproduct(product.id); // send product id
   }
 
   return (

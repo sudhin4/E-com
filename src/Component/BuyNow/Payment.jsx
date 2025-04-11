@@ -5,8 +5,15 @@ import { useEffect, useState } from "react";
 import Ordercomplete from "../ordercomplete/Ordercomplete";
 import { useNavigate } from "react-router-dom";
 import PriceDetailbuy from "./Price_deatils";
+import { useContext } from "react";
+import { myorders } from "../../Data/Context";
 
-function Payment({pricedetail}) {
+function Payment({
+  pricedetail,
+  myorderproductobj,
+  getpaymentdata,
+  checkingid,
+}) {
   const Paymethod = ["DebitCard", "UPI", "Cashondelivery"];
   const [cardopen, setcardopen] = useState(false);
   const [upiopen, setupiopen] = useState(false);
@@ -18,8 +25,6 @@ function Payment({pricedetail}) {
   function handlechange(e) {
     setinputvalue(e.target.value);
   }
-
-  
 
   useEffect(() => {
     if (inputvalue === "Card") {
@@ -34,24 +39,36 @@ function Payment({pricedetail}) {
     }
   }, [inputvalue]);
 
-  function afterbtnclicked(){
-    setopen(false)
-    navigate("/")
+  function afterbtnclicked() {
+    setopen(false);
+    navigate("/");
+  }
+
+  const payyyy = myorderproductobj;
+  let productidcheck = payyyy?.id;
+
+  const checkingidvar = checkingid;
+
+  function checkingidfun() {
+    if (productidcheck == checkingidvar) {
+      getpaymentdata(payyyy);
+    } else {
+    }
   }
 
   function openandclose() {
     setopen(true);
+    checkingidfun();
     setTimeout(() => {
       afterbtnclicked();
     }, 2000);
   }
 
-
   return (
     <>
-    <div className="Payment_details__">
-    <PriceDetailbuy price={pricedetail} />
-    </div>
+      <div className="Payment_details__">
+        <PriceDetailbuy price={pricedetail} />
+      </div>
       <div className="full_payment_div ">
         <h3 className="PaymentmethodHeading">Payment Method</h3>
         <div className="Cards box_payment">
@@ -110,10 +127,10 @@ function Payment({pricedetail}) {
 
       {isopen ? (
         <>
-        <div className="modal_overlay"></div>
+          <div className="modal_overlay"></div>
           <div className="Modal_open">
-          <Ordercomplete />
-        </div>
+            <Ordercomplete />
+          </div>
         </>
       ) : null}
     </>
