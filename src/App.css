@@ -113,6 +113,9 @@ a{
 .Profile_page_for_mobile{
     display: none;
 }
+.MobileMyorderpage{
+    display: none;
+}
 
 @media only screen and (max-width: 453px){
 
@@ -189,6 +192,9 @@ a{
         left: 0px;
     }
     .mobilemyproductpage{
+        display: block;
+    }
+    .MobileMyorderpage{
         display: block;
     }
     

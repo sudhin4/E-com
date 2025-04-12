@@ -14,11 +14,13 @@ import noitems from "../ProfilePage/Noitem.jpg";
 import { FaPencilAlt } from "react-icons/fa";
 import Editname from "./Editname";
 import { useNavigate } from "react-router-dom";
+import Myordermap from "../Myorders/Myordermap";
 
-function Profilepage({ productremovefunction }) {
+function Profilepage({ productremovefunction,dataformyorders }) {
   const productvalue = useContext(Contextvalue);
   const [myproductvaluestate, setproductvaluestate] = useState([]);
   const [value, setvalue] = useState(false); // Default should be false
+  const [myorders, setmyorders] = useState(false); // route the product or myorders
 
   useEffect(() => {
     setproductvaluestate(...myproductvaluestate, productvalue);
@@ -28,10 +30,8 @@ function Profilepage({ productremovefunction }) {
     // Update `value` when `myproductvaluestate` has items
     if (myproductvaluestate.length > 0) {
       setvalue(true);
-      
     } else {
       setvalue(false);
-      
     }
   }, [myproductvaluestate]);
 
@@ -69,7 +69,6 @@ function Profilepage({ productremovefunction }) {
   // Delete function for the main data like product page
 
   function productremovefunctionprofilepage(id, category) {
-    
     productremovefunction(id, category);
     setprofproductdelete(id);
   }
@@ -78,12 +77,19 @@ function Profilepage({ productremovefunction }) {
 
   useEffect(
     () =>
-
-      setproductvaluestate(prev =>
-        prev.filter(item => item.id !== profproductdelete)
+      setproductvaluestate((prev) =>
+        prev.filter((item) => item.id !== profproductdelete)
       ),
-      [profproductdelete]
+    [profproductdelete]
   );
+
+  function getcheckroute(value) {
+    if (value == "Myorders") {
+      setmyorders(true);
+    } else if (value == "myproduct") {
+      setmyorders(false);
+    }
+  }
 
   return (
     <>
@@ -107,13 +113,21 @@ function Profilepage({ productremovefunction }) {
             </div>
           </div>
           <div className="Main_profile_content_div content_divvvv">
-            <div className="myorder_div content_divv">
+            <div
+              className="myorder_div content_divv"
+              onClick={() => getcheckroute("Myorders")}
+            >
               <GiCardboardBoxClosed className="myorder_logo Logooo" />
               <p className="orders_ my_orders_p">My Orders</p>
             </div>
             <div className="myproduct_div content_divv">
               <LuBox className="myproduct_logo Logooo" />
-              <p className="products_ my_orders_p">My Products</p>
+              <p
+                className="products_ my_orders_p"
+                onClick={() => getcheckroute("myproduct")}
+              >
+                My Products
+              </p>
             </div>
             <div className="address_div content_divv">
               <FaRegAddressCard className="address_logo Logooo" />
@@ -134,8 +148,10 @@ function Profilepage({ productremovefunction }) {
           </div>
         </div>
 
-         <div className="right_section_div">
-          {value ? (
+        <div className="right_section_div">
+          {myorders ? (
+            <Myordermap data={dataformyorders}  />
+          ) : value ? (
             myproductvaluestate.map((item) => (
               <div key={item.id} className="Myproductdivsection">
                 <Myproducts
@@ -161,8 +177,7 @@ function Profilepage({ productremovefunction }) {
               </button>
             </div>
           )}
-        </div> 
-
+        </div>
 
         {openedit ? (
           <>

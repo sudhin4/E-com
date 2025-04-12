@@ -4,6 +4,8 @@
     font-family: 'Inter';
     font-weight: 600;
     font-size: 25px;
+    position: relative;
+    left: 5px;
 }
 
 .productimage {
@@ -16,7 +18,7 @@
 .productname_heading {
     font-family: 'Inter';
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
     width: 250px;
 }
 
@@ -122,9 +124,88 @@
 .No_items_orders {
     font-family: 'Inter';
     font-weight: 600;
-    font-size: 20px;
+    font-size: 14px;
     align-items: center;
     justify-content: center;
     display: flex;
     top: 600px;
+}
+.NoordeproductImage{
+    width: 250px;
+    height: 250px;
+}
+.No_items_orders{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -10%;
+    left: 36%;
+}
+.MYorder_map_cidv{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    position: relative;
+    left: 10px;
+}
+
+@media only screen and (max-width:453px){
+    .productimage{
+        width: 80px;
+        height: 80px;
+    }
+    .productname_heading{
+        font-size: 14px;
+        width: 99%;
+    }
+    .productprice_in_myorders{
+        font-size: 13px;
+    }
+    .SUbdiv_for_myproduct{
+        gap: 30px;
+        position: relative;
+        right: 60px;
+    }
+    .whole_content_myoders{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        
+    }
+    
+    .Mobile_div_image_sec{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        position: relative;
+        left: -10px;
+        align-items: center;
+    
+    }
+    .buttons_for_myproducts{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: -30px;
+        
+    }
+    .whole_myproduct_page{
+        width: 85%;
+        position: relative;
+        left: -10px;
+    }
+    .No_items_orders{
+        display: flex;
+        left: -1%;
+        
+    }
+    .NoordeproductImage{
+        width: 200px;
+        height: 200px;
+    }
+    .No_orders{
+        font-size: 19px;
+    }
 }

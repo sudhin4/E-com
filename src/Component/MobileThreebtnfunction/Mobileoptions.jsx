@@ -33,6 +33,10 @@ function Mobilesidebar({closesidebarfun}){
             navigate(`/`);
             closesidebarfun(false)
         }
+        else if(value == "myorders"){
+            navigate("/Myorders")
+            closesidebarfun(false)
+        }
     }
 
     return(

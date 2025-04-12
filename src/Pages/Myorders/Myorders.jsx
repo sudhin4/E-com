@@ -7,14 +7,17 @@ function Myorders({ Name, Price, Image, OrderId, date }) {
     <>
       <div className="whole_myproduct_page">
         <div className="whole_content_myoders">
-          <div className="Myproduct_image_div">
-            <img src={Image} alt="" className="productimage" />
+          <div className="Mobile_div_image_sec">
+            <div className="Myproduct_image_div">
+              <img src={Image} alt="" className="productimage" />
+            </div>
+
+            <div className="productdetails_section">
+              <h3 className="productname_heading">{Name}</h3>
+              <p className="productprice_in_myorders">₹{Price}</p>
+            </div>
           </div>
 
-          <div className="productdetails_section">
-            <h3 className="productname_heading">{Name}</h3>
-            <p className="productprice_in_myorders">₹{Price}</p>
-          </div>
           <div className="SUbdiv_for_myproduct">
             <div className="deliveryorderid_deliverydate">
               <h3 className="order_id_heading">Order Id</h3>

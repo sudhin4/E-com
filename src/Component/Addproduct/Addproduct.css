@@ -290,6 +290,10 @@ input::-webkit-inner-spin-button {
     z-index: 100;
     border-radius: 10px;
 }
+.SellingPrice_mobile_gird{
+    display: flex;
+    gap: 20px;
+}
 
 @media only screen and (max-width:453px){
     .Whoel_content{

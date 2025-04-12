@@ -365,6 +365,7 @@ function App() {
                     data={getdata}
                     getclosevalue={closelogindata}
                     productremovefunction={deleteitem}
+                    dataformyorders={getpaymentdata}
                   />
                 }
               />
@@ -424,10 +425,9 @@ function App() {
                 }
               />
               <Route path="/Contact_us" element={<ContactPage />} />
-              <Route
-                path="/Myoders"
-                element={<Myordermap data={getpaymentdata} />}
-              />
+              
+                <Route path="/Myorders" element={ <div className="MobileMyorderpage"><Myordermap data={getpaymentdata}/></div> }/>
+              
               <Route
                 path="/mobilemyproductpage"
                 element={

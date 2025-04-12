@@ -1,6 +1,7 @@
 import Myorders from "./Myorders";
 import { myorders } from "../../Data/Context";
 import { useContext, useEffect, useState } from "react";
+import Noorderimage from '../Myorders/No orders.jpg'
 import "../Myorders/Myorders.css";
 
 function Myordermap({ data }) {
@@ -8,17 +9,20 @@ function Myordermap({ data }) {
   const [isempty, setisempty] = useState(false);
 
   useEffect(() => {
-    if (productdata) {
-      setisempty(true);
-    } else {
+    if (productdata.length<=0) {
       setisempty(false);
+    } else {
+      setisempty(true);
     }
   });
 
   return (
     <>
       {isempty ? (
-        <>
+        
+        <div className="MYorder_map_cidv">
+
+        
           <h3 className="My_orders_heading">My orders</h3>
           {productdata.map((item, index) => {
             const random8Digit = Math.floor(
@@ -45,9 +49,10 @@ function Myordermap({ data }) {
               </div>
             );
           })}
-        </>
+        </div>
       ) : (
         <div className="No_items_orders">
+          <img src={Noorderimage} alt="" className="NoordeproductImage" />
           <h1 className="No_orders">No Orders...!</h1>
         </div>
       )}
