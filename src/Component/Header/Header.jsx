@@ -65,7 +65,7 @@ function Header({ image, clickvalue, getvalue, sidebaropenfun }) {
             className="img"
             onClick={() => navigate("/")}
           />
-          <h3 className="Logo">E-Com</h3>
+          <h3 className="Logo">E-Comm</h3>
           <IoMdSearch className="searchicon" />
           <input
             type="text"
