@@ -9,6 +9,7 @@ import { CiLogin } from "react-icons/ci";
 import userprofile from '../Header/user profile Image.jpg'
 import { useEffect, useState, useContext } from "react";
 import "./Mobileprofilepage.css";
+import { Link } from "react-router-dom";
 
 import { FaPencilAlt } from "react-icons/fa";
 
@@ -16,7 +17,7 @@ import { useNavigate } from "react-router-dom";
 
 function ProfileMobilepage() {
   let name = "Username";
-  let email = "Sudhinnaveen38@gamil.com";
+  let email = "example38@gamil.com";
 
   const [editname, seteditname] = useState(false);
   function openEdit(value){
@@ -58,11 +59,11 @@ function ProfileMobilepage() {
         <div className="Main_profile_content_div content_divvvv">
           <div className="myorder_div content_divv">
             <GiCardboardBoxClosed className="myorder_logo Logooo" />
-            <p className="orders_ my_orders_p">My Orders</p>
+           <Link to='/Myorders'><p className="orders_ my_orders_p">My Orders</p></Link> 
           </div>
           <div className="myproduct_div content_divv">
             <LuBox className="myproduct_logo Logooo" />
-            <p className="products_ my_orders_p">My Products</p>
+           <Link to='/mobilemyproductpage'><p className="products_ my_orders_p">My Products</p></Link> 
           </div>
           <div className="address_div content_divv">
             <FaRegAddressCard className="address_logo Logooo" />
