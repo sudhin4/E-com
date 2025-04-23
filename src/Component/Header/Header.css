@@ -110,9 +110,9 @@
 
 .searchicon {
     font-size: 22px;
-    position: absolute;
-    left: 19.9%;
-    top: 6%;
+    position: relative;
+    left: 70px;
+    top: 20px;
     z-index: 1;
     color: rgba(0, 0, 0, 0.457);
 }

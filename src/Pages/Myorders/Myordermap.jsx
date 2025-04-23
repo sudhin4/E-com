@@ -5,7 +5,7 @@ import Noorderimage from '../Myorders/No orders.jpg'
 import "../Myorders/Myorders.css";
 
 function Myordermap({ data }) {
-  const productdata = data;
+  const [productdata,setproductdata] = useState(data);
   const [isempty, setisempty] = useState(false);
 
   useEffect(() => {
@@ -15,6 +15,26 @@ function Myordermap({ data }) {
       setisempty(true);
     }
   });
+
+  console.log(productdata)
+
+  // removing my orders functions 
+  const [getremoveidstate,setgetremoveidstate] = useState();
+
+   function getremoveid(id){
+    setgetremoveidstate(id)
+   }
+
+   useEffect(()=>{
+    if(getremoveidstate){
+      const filteritem = productdata.filter(item=>item.id !== getremoveidstate)
+      console.log(filteritem,'THe seller'  )
+    setproductdata(filteritem)
+    }
+    
+   },[getremoveidstate])
+
+   console.log(getremoveidstate)
 
   return (
     <>
@@ -40,11 +60,13 @@ function Myordermap({ data }) {
             return (
               <div key={index} className="order_class_product">
                 <Myorders
+                  productid = {item.id}
                   Name={item.Name}
                   Price={item.Price}
                   Image={item.Image}
                   OrderId={random8Digit}
                   date={formattedDate}
+                  getremoveidfun={getremoveid}
                 />
               </div>
             );

@@ -19,6 +19,7 @@ function Myproducts({ Name, Image, Price,category, id,productremove }) {
   return (
     <>
       <div className="whole_component">
+        
         <div className="whole_cardd">
           <div className="whole_card_contentt">
             <img src={Image} alt="" className="product_imagee" />

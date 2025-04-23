@@ -16,7 +16,7 @@ import Editname from "./Editname";
 import { useNavigate } from "react-router-dom";
 import Myordermap from "../Myorders/Myordermap";
 
-function Profilepage({ productremovefunction,dataformyorders }) {
+function Profilepage({ productremovefunction, dataformyorders }) {
   const productvalue = useContext(Contextvalue);
   const [myproductvaluestate, setproductvaluestate] = useState([]);
   const [value, setvalue] = useState(false); // Default should be false
@@ -150,9 +150,11 @@ function Profilepage({ productremovefunction,dataformyorders }) {
 
         <div className="right_section_div">
           {myorders ? (
-            <Myordermap data={dataformyorders}  />
+            <Myordermap data={dataformyorders} />
           ) : value ? (
-            myproductvaluestate.map((item) => (
+
+            <div className="card_container_myproduct">
+              {myproductvaluestate.map((item) => (
               <div key={item.id} className="Myproductdivsection">
                 <Myproducts
                   data={item}
@@ -164,7 +166,9 @@ function Profilepage({ productremovefunction,dataformyorders }) {
                   productremove={productremovefunctionprofilepage}
                 />
               </div>
-            ))
+            ))}
+            </div>
+            
           ) : (
             <div className="Noitems_div">
               <img src={noitems} alt="" className="noitem image" />

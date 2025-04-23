@@ -2,7 +2,12 @@ import { useContext, useState } from "react";
 import productimage from "../Myorders/Iphone image.jpg";
 import "../Myorders/Myorders.css";
 
-function Myorders({ Name, Price, Image, OrderId, date }) {
+function Myorders({ Name, Price, Image, OrderId, date,getremoveidfun,productid }) {
+
+  
+function getremveid(value){
+  getremoveidfun(value)
+}
   return (
     <>
       <div className="whole_myproduct_page">
@@ -30,7 +35,7 @@ function Myorders({ Name, Price, Image, OrderId, date }) {
           </div>
           <div className="buttons_for_myproducts">
             <button className="view_more_btn_for_myproduct">View More</button>
-            <button className="Cancel_order_btn_for_myproduct">
+            <button className="Cancel_order_btn_for_myproduct" onClick={()=>getremveid(productid)}>
               Cancel Order
             </button>
           </div>
