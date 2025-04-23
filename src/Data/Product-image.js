@@ -3,7 +3,7 @@ import prodimg2 from "../Image/Home Appliance.png";
 import prodimg3 from "../Image/Products-image/Shoes/Nike shoe frontImage.png";
 import prodimg4 from "../Image/Products-image/Bag/Zalhin travel Bag.jpg";
 import prodimg5 from "../Image/Watch Image.jpg";
-import prodimg6 from "../Image/Dress image.jpg";
+import prodimg6 from "../Image/Dress Image.jpg";
 import prodimg7 from "../Image/Perfume Image1.jpg";
 import furimg from '../Image/Furniture image.jpg'
 //
